@@ -1,24 +1,27 @@
 #Rosalind INI3: Strings and Lists
 
 #Given: A string s of length at most 200 letters and four integers a, b, c and d.
-#Return: The slice of this string from indices a through b and 
-#c through d (with space in between), inclusively. 
+#Return: The slice of this string from indices a through b and
+#c through d (with space in between), inclusively.
 #In other words, we should include elements s[b] and s[d] in our slice.
 
 
-#Sample Input: HumptyDumptysatonawallHumptyDumptyhadagreatfallAlltheKingshorsesandalltheKingsmenCouldntputHumptyDumptyinhisplaceagain.
-#22 27 97 102
+# Sample Input: HumptyDumptysatonawallHumptyDumptyhadagreatfallAlltheKingshorsesandalltheKingsmenCouldntputHumptyDumptyinhisplaceagain.
+# 22 27 97 102
 
-#Sample Output: 
-#Humpty Dumpty
+# Sample Output 1:
+# Humpty Dumpty
 
-weirdtext = 'HumptyDumptysatonawallHumptyDumptyhadagreatfallAlltheKingshorsesandalltheKingsmenCouldntputHumptyDumptyinhisplaceagain'
-cutup = weirdtext[22:28] + ' ' + weirdtext[97:103]
+# Sample Input 2:
+# bkWm0rEKPicadgMaguXhBFguttataNZHV6GJEYST3Q7CrOdMzudCYrhzxJARJIdj7PqbBfY9d3Tj5t7lAmfukT7F5Sl66tSvySCR4X4Jmak3b0oD2JuiBCgwAHwiXphI1UiGt7vSv3bWxNbDl8SFaQ1IBQApIRJs1v.
+# 8 11 22 28
 
-print cutup
+# Sample Output 2:
+# Pica guttata
 
-weirdtext2 = 'QkO5fVuVsGlE9x1a05v5efAR4uTV90AhA52js3UWtTyBombus4PcvZkY6h6PdZ49SX0psMbzxQlqNGMyXJWlPzYfBcherrugCPiMsb9PnWIKDsGtcEEvAgylPpJVhkrOxbU4m1EsSXFAx3A5PshnvRFAVkfI3zq7tCAG0Kuy3EuWPQqftI4yac6sGuALd0I8'
-cutup2 = weirdtext2[43:49] + ' ' + weirdtext2[89:96]
 
-print cutup2
+text = input("Please enter a string of text: ")
+a, b, c, d = [int(x) for x in input("Enter four space-separated integers: ").split( )]
 
+cut3 =text[a:b+1] + ' ' + text[c:d+1]
+print(cut3)

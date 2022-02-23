@@ -7,9 +7,11 @@
 #Example Output: 34 (9+25)
 
 
-a = 954
-b = 915
+a = int(input ("Enter value for a: "))
+b = int(input ("Enter value for b: "))
 
 c2 = a**2 + b**2
 
-print c2
+print (a)
+print (b)
+print (c2)
